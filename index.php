@@ -1,18 +1,5 @@
-<?php 
-
-$name = $_GET["paragrafo"];
-
-$p=$_GET["pass"];
-
-echo $p;
-
-echo strlen($name);
-
-$par= str_replace('pass','****',$p);
-
-echo '<br/>';
-echo $par;
-?>
-
-<h1>ciao mi chiamo <?php echo $name; ?>
-</h1>
+<form action="data.php" method="GET">
+    <input type="text" placeholder="Iserisci il tuo nick name" name="paragrafo">
+    <input type="text" placeholder="inserisci la tua password" name="pass">
+    <button type="submit">Invia</button>
+</form>
